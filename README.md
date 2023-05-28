@@ -28,3 +28,9 @@
 ```
 
 需要注意的是，代码只在 macOS 下测试过，使用`open`命令来打开种子文件对应的 url（wget 会被拦截，不清楚为什么）。如果是其他系统，自行查找对应的指令。
+
+配置完成后，运行`get_torrents.py`即可：
+
+```bash
+python3 get_torrents.py
+```
