@@ -13,6 +13,7 @@
 -   `max_size`：要下载的电子书大小的最大值，单位为 MB
 -   `ipv6`：是否使用 IPv6 地址
 -   `url_open_cmd`：打开 url 的命令，macOS 下为`open`，其余系统请自行修改
+-   `if_download`：是否下载种子文件，如果为`false`，则只输出统计信息
 
 完整的`config.json`文件示例如下：
 
@@ -21,8 +22,8 @@
     "passkey": "xxx",
     "min_size": 1,
     "max_size": 20,
-    "ipv6": false
-    "url_open_cmd": "open"
+    "ipv6": false,
+    "url_open_cmd": "open",
     "if_download": false
 }
 ```
