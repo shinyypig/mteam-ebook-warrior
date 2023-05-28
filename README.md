@@ -8,19 +8,21 @@
 
 各参数项说明如下：
 
+-   `passkey`：为 M-Team 的用户 passkey，可在已下载的种子中，或者从 tracker 中找到
+-   `min_size`：要下载的电子书大小的最小值，单位为 MB
+-   `max_size`：要下载的电子书大小的最大值，单位为 MB
+-   `ipv6`：是否使用 IPv6 地址
+-   `url_open_cmd`：打开 url 的命令，macOS 下为`open`，其余系统请自行修改
+
+完整的`config.json`文件示例如下：
+
 ```json
 {
-    // 为 M-Team 的用户 passkey，可在已下载的种子中，或者从tracker中找到
     "passkey": "xxx",
-    // 要下载的电子书大小的最小值，单位为 MB
     "min_size": 1,
-    // 要下载的电子书大小的最大值，单位为 MB
     "max_size": 20,
-    // 是否使用 IPv6 地址
     "ipv6": false
-    // 打开 url 的命令，macOS 下为 open，其余系统请自行修改
     "url_open_cmd": "open"
-    // 是否下载种子文件，如果为 false，则输出对应的统计结果
     "if_download": false
 }
 ```
